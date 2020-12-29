@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "youtube-library"
+  "defaultProject": "youtube-library",
+  "cli": {
+    "analytics": false
+  }
 }
