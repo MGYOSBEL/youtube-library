@@ -1,0 +1,5 @@
+<div class="container">
+  <div *ngFor="let result of list$ | async">
+    <app-result-card [result]="result"></app-result-card>
+  </div>
+</div>

@@ -1,1 +1,9 @@
-<p>search works!</p>
+<form class="search-form" [formGroup]="searchFrom">
+  <mat-form-field class="search-full-width">
+    <mat-label>Youtube URL</mat-label>
+    <input type="url" autocomplete="off" matInput formControlName="urlFormControl" placeholder="Ex. https://www.youtube.com/watch?v=gTrLniP5tSQ">
+    <mat-error *ngIf="urlFormControl.hasError('required')">
+      URL is <strong>required</strong>
+    </mat-error>
+  </mat-form-field>
+</form>

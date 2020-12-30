@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SidebarComponent } from './sidebar.component';
+import { YoutubeLibraryComponent } from './youtube-library.component';
 
-describe('SidebarComponent', () => {
-  let component: SidebarComponent;
-  let fixture: ComponentFixture<SidebarComponent>;
+describe('YoutubeLibraryComponent', () => {
+  let component: YoutubeLibraryComponent;
+  let fixture: ComponentFixture<YoutubeLibraryComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SidebarComponent ]
+      declarations: [ YoutubeLibraryComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SidebarComponent);
+    fixture = TestBed.createComponent(YoutubeLibraryComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,0 +1,22 @@
+<mat-toolbar>
+  <span>Youtube Library</span>
+  <span class="navbar-spacer"></span>
+  <button
+    mat-icon-button
+    matTooltip="View your history"
+    class="example-icon favorite-icon"
+    aria-label="Example icon-button with heart icon"
+    (click)="onHistoryClick()"
+  >
+    <mat-icon>history</mat-icon>
+  </button>
+  <button
+    mat-icon-button
+    matTooltip="View your favorites"
+    class="example-icon"
+    aria-label="Example icon-button with share icon"
+    (click)="onFavoritesClick()"
+  >
+    <mat-icon>bookmark</mat-icon>
+  </button>
+</mat-toolbar>

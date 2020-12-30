@@ -1,1 +1,9 @@
-<p>video-view works!</p>
+<div class="container">
+  <iframe
+    class="responsive-iframe"
+    id="ytplayer"
+    type="text/html"
+    [src]="videoUrl | safe:'resourceUrl'"
+    frameborder="0">
+  </iframe>
+</div>
