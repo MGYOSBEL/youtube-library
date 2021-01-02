@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { VideoService } from '../../video/services/video.service';
+import { SearchResult } from '../../search/Models/SearchResult.model';
 
 
 @Component({
@@ -10,12 +11,12 @@ import { VideoService } from '../../video/services/video.service';
 })
 export class MainLayoutComponent implements OnInit {
 
-  videoUrl$: Observable<string>;
+  video$: Observable<SearchResult>;
 
   constructor(
     private videoService: VideoService
   ) {
-    this.videoUrl$ = this.videoService.videoUrl$;
+    this.video$ = this.videoService.video$;
   }
 
   ngOnInit(): void {

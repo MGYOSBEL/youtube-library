@@ -1,9 +1,9 @@
 
 <mat-drawer-container class="container" autosize>
-  <app-navbar (history)="drawer.toggle()" (favorites)="drawer.toggle()"></app-navbar>
+  <app-navbar (history)="viewHistory();drawer.toggle()" (favorites)="viewFavorites();drawer.toggle()"></app-navbar>
   <mat-drawer #drawer class="side-drawer" mode="over">
-    <strong>History</strong>
-    <app-results-list [list$]="list$"></app-results-list>
+    <strong>{{sideDrawerTitle}}</strong>
+    <app-results-list [list$]="list$" (resultClicked)="playVideo($event);drawer.toggle()"></app-results-list>
   </mat-drawer>
 
   <div class="main-layout-content">

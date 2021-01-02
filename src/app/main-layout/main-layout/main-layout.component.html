@@ -1,6 +1,9 @@
 <div class="container">
   <div class="column">
     <app-search></app-search>
-    <app-video-view [videoUrl]="videoUrl$ | async"></app-video-view>
+    <ng-container *ngIf="(video$ | async)!.id">
+      <app-video-view [youtubeVideo$]="video$"></app-video-view>
+      <app-favorite-selector [youtubeVideo$]="video$"></app-favorite-selector>
+    </ng-container>
   </div>
 </div>

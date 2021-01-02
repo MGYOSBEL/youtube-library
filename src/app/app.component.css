@@ -5,7 +5,8 @@
 
 .side-drawer {
   padding: 20px;
-  flex: 1
+  flex: 1;
+  overflow-x: clip;
 }
 
 .main-layout-content{

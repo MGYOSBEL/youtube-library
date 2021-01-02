@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "video-library-b42bc"
+  },
+  "targets": {
+    "video-library-b42bc": {
+      "hosting": {
+        "youtube-library": [
+          "video-library-b42bc"
+        ]
+      }
+    }
+  }
+}

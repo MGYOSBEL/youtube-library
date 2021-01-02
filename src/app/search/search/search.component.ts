@@ -36,7 +36,7 @@ export class SearchComponent implements OnInit {
       switchMap(id => this.searchService.searchById(id)),
       tap(result => this.historyService.add(result))
     ).subscribe(
-      searchResult => this.videoService.play(searchResult.id)
+      searchResult => this.videoService.play(searchResult)
     );
 
   }

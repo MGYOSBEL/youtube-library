@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { YoutubeLibraryComponent } from './youtube-library.component';
+import { FavoriteSelectorComponent } from './favorite-selector.component';
 
-describe('YoutubeLibraryComponent', () => {
-  let component: YoutubeLibraryComponent;
-  let fixture: ComponentFixture<YoutubeLibraryComponent>;
+describe('FavoriteSelectorComponent', () => {
+  let component: FavoriteSelectorComponent;
+  let fixture: ComponentFixture<FavoriteSelectorComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ YoutubeLibraryComponent ]
+      declarations: [ FavoriteSelectorComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(YoutubeLibraryComponent);
+    fixture = TestBed.createComponent(FavoriteSelectorComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

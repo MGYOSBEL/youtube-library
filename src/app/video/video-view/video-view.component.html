@@ -3,7 +3,7 @@
     class="responsive-iframe"
     id="ytplayer"
     type="text/html"
-    [src]="videoUrl | safe:'resourceUrl'"
+    [src]="videoUrl$ | async | safe:'resourceUrl'"
     frameborder="0">
   </iframe>
 </div>

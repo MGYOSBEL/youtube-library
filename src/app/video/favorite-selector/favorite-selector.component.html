@@ -1,0 +1,10 @@
+<div class="favorite-button-container" *ngIf="isFavorite$ | async; else notFavoriteTemplate">
+  <button mat-button color="primary" aria-label="Mark video as favorite" (click)="removeFromFavorites()">
+    <mat-icon>favorite</mat-icon> Remove From Favorites
+  </button>
+</div>
+<ng-template #notFavoriteTemplate>
+  <button mat-button color="primary" aria-label="Mark video as favorite" (click)="addToFavorites()">
+    <mat-icon>favorite_border</mat-icon>Add To Favorites
+  </button>
+</ng-template>
