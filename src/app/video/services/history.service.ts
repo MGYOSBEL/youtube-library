@@ -17,7 +17,6 @@ export class HistoryService {
   constructor(private cache: CacheService) {
     const cachedHistory = this.cache.load(HISTORY_CACHE_TOKEN);
     this.historySubject.next(cachedHistory as SearchResult[]);
-    console.log('[HistoryService] init', this.historySubject.value);
   }
 
   add(element: SearchResult): void {
